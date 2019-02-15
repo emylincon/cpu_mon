@@ -14,7 +14,7 @@ def get_cpu():
     cpu.append(delta)
     #os.system('echo "{}," >> cpu_log.txt'.format(delta))
     time.sleep(1)
-    print('cpu', delta)
+    print('cpu:', delta)
 
 
 def main():
