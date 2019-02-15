@@ -12,7 +12,7 @@ def get_cpu():
     delta = abs(prev_t - next_t)
     prev_t = next_t
     cpu.append(delta)
-    os.system('echo "{}," >> cpu_log.txt'.format(delta))
+    #os.system('echo "{}," >> cpu_log.txt'.format(delta))
     time.sleep(1)
     print('cpu', delta)
 
