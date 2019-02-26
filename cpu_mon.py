@@ -11,7 +11,7 @@ def get_cpu():
     next_t = psutil.cpu_percent(percpu=False)
     delta = abs(prev_t - next_t)
     prev_t = next_t
-    cpu.append(delta)
+    #cpu.append(delta)
     #os.system('echo "{}," >> cpu_log.txt'.format(delta))
     time.sleep(1)
     print('cpu:', delta)
@@ -22,8 +22,8 @@ def main():
         try:
             get_cpu()
         except:
-            print(cpu)
-            os.system('echo "{}" >> cpu_log.txt'.format(cpu))
+            #print(cpu)
+            #os.system('echo "{}" >> cpu_log.txt'.format(cpu))
             break
 
 
